@@ -4,6 +4,7 @@ import com.wepping.wepper.`interface`.user.dto.UserDto
 import com.wepping.wepper.`interface`.user.dto.UserListDto
 import com.wepping.wepper.`interface`.user.service.UserService
 import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
@@ -16,8 +17,8 @@ class UserController(
         return this.userService.getAllUsers()
     }
 
-    @GetMapping("/v1/users/:id")
-    fun getUserById(id: Long): UserDto {
+    @GetMapping("/v1/users/{id}")
+    fun getUserById(@PathVariable id: String): UserDto {
         return this.userService.getUserById(id)
     }
 }

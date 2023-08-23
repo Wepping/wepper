@@ -1,6 +1,6 @@
 package com.wepping.wepper.domain.user
 
-import com.wepping.wepper.BaseEntity
+import com.wepping.wepper.common.entity.BaseEntity
 import com.wepping.wepper.`interface`.user.dto.UserDto
 import jakarta.persistence.*
 

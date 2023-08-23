@@ -7,5 +7,5 @@ open abstract class UserService(
 ) {
     abstract fun getAllUsers(): UserListDto
 
-    abstract fun getUserById(id: Long): UserDto
+    abstract fun getUserById(id: String): UserDto
 }

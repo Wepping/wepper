@@ -1,4 +1,4 @@
-package com.wepping.wepper
+package com.wepping.wepper.common.entity
 
 import jakarta.persistence.Column
 import jakarta.persistence.MappedSuperclass

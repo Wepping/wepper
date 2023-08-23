@@ -1,7 +1,7 @@
 package com.wepping.wepper.`interface`.user.dto
 
-import com.wepping.wepper.BaseDto
-import com.wepping.wepper.BaseListDto
+import com.wepping.wepper.common.entity.BaseDto
+import com.wepping.wepper.common.entity.BaseListDto
 import java.time.ZonedDateTime
 
 class UserDto(
