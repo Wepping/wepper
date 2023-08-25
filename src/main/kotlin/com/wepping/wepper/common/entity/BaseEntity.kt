@@ -1,4 +1,4 @@
-package com.wepping.wepper
+package com.wepping.wepper.common.entity
 
 import jakarta.persistence.Column
 import jakarta.persistence.MappedSuperclass
@@ -12,11 +12,11 @@ abstract class BaseEntity<EntityDto : BaseDto> {
 
     @field:CreationTimestamp
     @Column(nullable = false)
-    lateinit var createdAt: ZonedDateTime
+    var createdAt: ZonedDateTime = ZonedDateTime.now()
 
     @field:UpdateTimestamp
     @Column(nullable = false)
-    lateinit var updatedAt: ZonedDateTime
+    var updatedAt: ZonedDateTime = ZonedDateTime.now()
 
     abstract fun toDto() : EntityDto
 }
